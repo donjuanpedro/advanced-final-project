@@ -1,19 +1,23 @@
 export function loadPosts() {
     return function (dispatch) {
         fetch("/posts")
-        .then( (res) => {
-            return res.json();
+        .then( (response) => {
+            return response.json();
         }).then((posts) => {
             dispatch(postsLoaded(posts));
         });
-    }
+    };
 }
 function postsLoaded(posts) {
     return {
         type: "POSTS_LOADED",
         value: posts
-    },
+    };
 }
+
+
+
+
 function postLoaded(post){
     return {
         type: "GET_POST_DONE",
@@ -35,8 +39,8 @@ export function createPost(post) {
     return function (dispatch) {
         fetch("/posts", {
             method: "POST",
-            headers: {"Content-Type": "application/json",
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(post)
-        }).then(()=> disptch(loadPosts()));
+        }).then(()=> dispatch(loadPosts()));
     };
 }
