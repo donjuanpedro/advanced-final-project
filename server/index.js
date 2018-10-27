@@ -1,5 +1,3 @@
-// dotenv allows us to declare environment variables in a .env file, \
-// find out more here https://github.com/motdotla/dotenv
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -7,10 +5,11 @@ const mongoose = require("mongoose");
 const userRoutes = require("./routes/UserRoutes");
 const sessionRoutes = require("./routes/SessionRoutes");
 const authenticationRoutes = require("./routes/AuthenticationRoutes");
+const postRoutes = require("./modelRoutes/postRoutes");
 
 mongoose.set("debug", true);
+mongoose.connect("mongodb://walkerlyle:dietcoke1@ds125673.mlab.com:25673/final-project");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://jwoo:jwoo@ds147668.mlab.com:47668/aca-test");
 
 const app = express();
 
@@ -23,6 +22,7 @@ app.use(bodyParser.json());
 app.use(userRoutes);
 app.use(sessionRoutes);
 app.use(authenticationRoutes);
+app.use(postRoutes);
 
 app.get("/canigetthis", function (req, res) {
   res.send("You got the data. You are authenticated");
