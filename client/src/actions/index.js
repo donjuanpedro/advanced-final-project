@@ -1,3 +1,9 @@
+function postsLoaded(posts) {
+    return {
+        type: "POSTS_LOADED",
+        value: posts
+    };
+}
 export function loadPosts() {
     return function (dispatch) {
         fetch("/posts")
@@ -8,15 +14,6 @@ export function loadPosts() {
         });
     };
 }
-function postsLoaded(posts) {
-    return {
-        type: "POSTS_LOADED",
-        value: posts
-    };
-}
-
-
-
 
 function postLoaded(post){
     return {
