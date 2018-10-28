@@ -5,10 +5,10 @@ import CreateThingsContainer from "../containers/CreateThingsContainer";
 function Main() {
     return (
         <div>
-            <div>
+            <div className="col-8">
                 <CreateThingsContainer />
             </div>
-            <div>
+            <div className ="col-8">
                 <h1>Read a Post</h1>
                 <PostsContainer />
             </div>

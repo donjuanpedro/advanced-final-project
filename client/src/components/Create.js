@@ -23,47 +23,47 @@ class Create extends React.Component {
                   this.props.createPost(this.state.post);
                 }
               }}>
-                <div>
-                  Title: <input onChange={(e) => {
+                <div className="form-group">
+                  Title: <input className="form-control" onChange={(e) => {
                     const post = {title: e.target.value};
                     this.setState({
                       post: Object.assign(this.state.post,post)
                     });
                   }} />
                 </div>
-                <div>
-                  Body: <input onChange={(e) => {
+                <div className="form-group">
+                  Body: <input className="form-control" onChange={(e) => {
                     const post = {body: e.target.value};
                     this.setState({
                       post: Object.assign(this.state.post,post)
                     });
                   }} />
                 </div>
-                <div>
-                  Image: <input onChange={(e) => {
+                <div className="form-group">
+                  Image: <input className="form-control" onChange={(e) => {
                     const post = {img: e.target.value};
                     this.setState({
                       post: Object.assign(this.state.post,post)
                     });
                   }} />
                 </div>
-                <div>
-                  Date: <input onChange={(e) => {
+                <div className="form-group"> 
+                  Date: <input className="form-control" onChange={(e) => {
                     const post = {date: e.target.value};
                     this.setState({
                       post: Object.assign(this.state.post,post)
                     });
                   }} />
                 </div>
-                <div>
-                  Time: <input onChange={(e) => {
+                <div className="form-group">
+                  Time: <input className="form-control" onChange={(e) => {
                     const post = {time: e.target.value};
                     this.setState({
                       post: Object.assign(this.state.post,post)
                     });
                   }} />
                 </div>
-                <button>Create</button>
+                <button className="btn btn-primary">Create</button>
               </form>
           </div>
         );
