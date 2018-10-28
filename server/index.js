@@ -1,13 +1,13 @@
 
-const express = require("express");
-const bodyParser = require("body-parser");
+let express = require("express");
+let bodyParser = require("body-parser");
 const app = express();
 
-const postRoutes = require("./modelRoutes/PostRoutes");
+let PostRoutes = require("./modelRoutes/PostRoutes");
 
-const mongoose = require("mongoose");
+let mongoose = require("mongoose");
 
-mongoose.connect("mongodb://walkerlyle:dietcoke1@ds125673.mlab.com:25673/final-project");
+mongoose.connect("mongodb://walkerlyle:dietcoke1@ds217350.mlab.com:17350/advanced-final-project");
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
