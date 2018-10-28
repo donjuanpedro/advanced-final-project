@@ -8,13 +8,14 @@ class Post extends Component {
 
     render() {
         return (
-            <div>
-                <h3>{"" + this.props.post.title + this.props.post.body + this.props.post.img + this.props.post.date + this.props.post.time}</h3>
+            <div className="row">
+            <div className="col-12">
                 <h3>Post Title: {this.props.post.title}</h3>
                 <h3>Post Body: {this.props.post.body}</h3>
                 <h3>Post Image: {this.props.post.img}</h3>
                 <h3>Post Date: {this.props.post.date}</h3>
                 <h3>Post Time: {this.props.post.time}</h3>
+            </div>
             </div>
         )
     }
