@@ -11,7 +11,6 @@ mongoose.connect("mongodb://walkerlyle:dietcoke1@ds217350.mlab.com:17350/advance
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
-
 app.use(PostRoutes);
 
 

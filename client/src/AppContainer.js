@@ -7,7 +7,7 @@ function mapDispatchToProps(dispatch) {
     return {
         loadPosts: function () {
             dispatch(loadPosts());
-        }
+        },
     };
 }
 

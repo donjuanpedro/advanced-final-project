@@ -9,7 +9,7 @@ import PostContainer from "./containers/PostContainer";
 class App extends Component {
   constructor() {
     super();
-    this.state = {users: []};
+    this.state = {posts: []};
   }
   componentDidMount(){
     this.props.loadPosts();
