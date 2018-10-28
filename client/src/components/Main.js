@@ -9,7 +9,7 @@ function Main() {
                 <CreateThingsContainer />
             </div>
             <div>
-                <h1>Posts</h1>
+                <h1>Read a Post</h1>
                 <PostsContainer />
             </div>
         </div>
