@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 
-const postRoutes = require("./modelRoutes/postRoutes");
+const postRoutes = require("./modelRoutes/PostRoutes");
 
 const mongoose = require("mongoose");
 
@@ -12,7 +12,7 @@ mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
 
-app.use(postRoutes);
+app.use(PostRoutes);
 
 
 const port = process.env.PORT || 5000;

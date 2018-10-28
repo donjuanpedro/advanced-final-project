@@ -1,4 +1,4 @@
-let PostModel = require("../models/postModel");
+let PostModel = require("../models/PostModel");
 
 module.exports.list = function list(req, res) {
     PostModel.find({}).exec()
