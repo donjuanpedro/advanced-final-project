@@ -4,11 +4,11 @@ import CreateThingsContainer from "../containers/CreateThingsContainer";
 
 function Main() {
     return (
-        <div>
-            <div className="col-8">
+        <div className="row">
+            <div className="col-12">
                 <CreateThingsContainer />
             </div>
-            <div className ="col-8">
+            <div className ="col-12">
                 <h1>Read a Post</h1>
                 <PostsContainer />
             </div>
