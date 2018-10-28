@@ -19,3 +19,9 @@ module.exports.create = function create(req,res) {
         res.json(savedPost);
     });
 }
+// module.exports.remove = function remove(req,res){
+//     PostModel.findByIdAndRemove(req.params.id).exec()
+//         .then(posts => {
+//             res.json(posts);
+//         });
+// }
