@@ -13,7 +13,7 @@
     "copy-assets": "mkdir -p ./public && cp -R ./client/build/* ./public",
     "compile-server": "rm -rf ./dist && babel server --out-dir dist",
     "pre-deploy": "npm run compile-server && npm run build-client && npm run clean-assets && npm run copy-assets",
-    "start": "node ./dist/index",
+    "start": "nf start",
     "client": "cd client && npm start && cd .."
   },
   "keywords": [],
@@ -55,8 +55,11 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.1.0",
     "react-router-dom": "^4.1.1",
     "react-scripts": "^0.9.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "whatwg-fetch": "^2.0.3"
   },
   "proxy": "http://localhost:3001"

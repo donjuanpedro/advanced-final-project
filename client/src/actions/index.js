@@ -1,8 +1,8 @@
 export function loadPosts() {
     return function (dispatch) {
         fetch("/posts")
-        .then( (response) => {
-            return response.json();
+        .then( (res) => {
+            return res.json();
         }).then((posts) => {
             dispatch(postsLoaded(posts));
         });

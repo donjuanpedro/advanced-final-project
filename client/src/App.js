@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import SignUpSignIn from "./SignUpSignIn";
-import TopNavbar from "./TopNavbar";
-import Secret from "./Secret";
+import PostContainer from "./containers/PostContainer";
+import Main from "./components/Main";
+// import SignUpSignIn from "./SignUpSignIn";
+// import TopNavbar from "./TopNavbar";
+// import Secret from "./Secret";
 
 class App extends Component {
   constructor() {

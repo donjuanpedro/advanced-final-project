@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import CreateThings from "../components/CreateThings";
-import createPost from "../actions";
+import Create from "../components/Create";
+import { createPost } from "../actions";
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -9,4 +9,4 @@ function mapDispatchToProps(dispatch) {
         }
     };
 }
-export default connect(null,mapDispatchToProps)(CreateThings);
+export default connect(null,mapDispatchToProps)(Create);

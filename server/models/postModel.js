@@ -1,12 +1,11 @@
 let mongoose = require("mongoose");
 
-const schema = new.mongoose.Schema({
+const schema = new mongoose.Schema({
     title: {
         required: true,
         type: String
     },
     body: {
-        required: true,
         type: String
     },
     img: {
