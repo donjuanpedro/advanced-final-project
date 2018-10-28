@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import PostContainer from "./containers/PostContainer";
 import Main from "./components/Main";
+import PostContainer from "./containers/PostContainer";
+
 
 
 class App extends Component {

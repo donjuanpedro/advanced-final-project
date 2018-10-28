@@ -1,6 +1,6 @@
 let express = require("express");
 const router = express.Router();
-let {list,show,create} = require("../controllers/PostsController");
+let {list,show,create} = require("../controllers/PostController");
 
 router.get("/posts", list);
 router.get("/post/:id", show);

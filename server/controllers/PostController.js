@@ -2,8 +2,8 @@ let PostModel = require("../models/postModel");
 
 module.exports.list = function list(req, res) {
     PostModel.find({}).exec()
-    .then(post => {
-        res.json(post);
+    .then(posts => {
+        res.json(posts);
     });
 }
 module.exports.show = function show(req, res) {
